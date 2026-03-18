@@ -301,6 +301,18 @@ section { padding: 96px 48px; }
   padding-left: 14px; position: relative;
 }
 .project-highlight::before { content: '✦'; position: absolute; left: 0; color: var(--gold); font-size: 9px; top: 3px; }
+.project-download {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 24px;
+  background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.35);
+  color: var(--gold2); padding: 10px 18px; border-radius: 8px;
+  font-size: 13px; font-weight: 600; letter-spacing: 0.04em;
+  text-decoration: none; transition: all 0.2s;
+}
+.project-download:hover {
+  background: rgba(201,168,76,0.22); border-color: var(--gold);
+  color: var(--white); transform: translateY(-1px);
+}
 
 /* ── EDUCATION ── */
 .education { background: var(--white); }
@@ -566,6 +578,7 @@ footer {
         <div class="project-highlight">M&M D/E: 0.02x vs Tata 0.95x — leverage comparison</div>
         <div class="project-highlight">Interactive Power BI dashboard with 4 visuals & 2 slicers</div>
       </div>
+      <a href="sip_final_college.pdf" download class="project-download">⬇ Download Full Report (PDF)</a>
     </div>
     <div class="project-card">
       <div class="project-tag">Power BI · Data Visualisation</div>
@@ -584,6 +597,7 @@ footer {
         <div class="project-highlight">Turnaround story visual with red zero reference line</div>
         <div class="project-highlight">4 KPI cards + 2 interactive slicers (Category & FY)</div>
       </div>
+      <a href="Tata_Motors_vs_MM_Dashboard.pbix" download class="project-download">⬇ Download Dashboard (.pbix)</a>
       <div class="dashboard-preview">
         <img src="Tata%20Motors%20vs%20M%26M%20Dashboard.png" alt="Tata Motors vs M&M Power BI Dashboard">
         <div class="preview-label">Interactive Power BI Dashboard — Tata Motors vs M&M Financial Ratio Analysis</div>
